@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fregservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fregservice
+  template:
+    metadata:
+      labels:
+        app: fregservice
+    spec:
+      containers:
+      - name: fregservice
+        image: johannesdigdir/freg_service:44a9923c70c9e9a5b6a2d121ddd420aa49d791e9
+        ports:
+        - containerPort: 5000

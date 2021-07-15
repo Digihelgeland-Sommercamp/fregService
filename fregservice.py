@@ -7,7 +7,7 @@ import random
 from werkzeug.exceptions import BadRequest, HTTPException
 
 class Person:
-    def __init__(self, local_file_path: str = "\\FREG_manual\\", file_name: str = None, file_position_in_directory: int = -1) -> None:
+    def __init__(self, local_file_path: str = "/FREG_manual/", file_name: str = None, file_position_in_directory: int = -1) -> None:
         person_from_file = self._read_person_from_file(local_file_path=local_file_path, file_name=file_name, file_position_in_directory=file_position_in_directory)
         self._parse_freg_person_json(json_object=person_from_file)
 
