@@ -50,7 +50,7 @@ class Person:
         for key in json_object:
             print (key)
 
-    def get_number_of_files_in_directory(self, local_file_path: str = "\\FREG_manual\\"):
+    def get_number_of_files_in_directory(self, local_file_path: str = "/FREG_manual/"):
         filepath = str(pathlib.Path(__file__).parent.resolve()) + local_file_path
         return len([f for f in listdir(filepath) if isfile(join(filepath, f))])
 
