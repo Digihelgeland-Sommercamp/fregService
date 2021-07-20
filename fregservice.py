@@ -131,7 +131,7 @@ class Person:
         self._copy_key_from_dict_to_target("mellomnavn", self._navn[0], navn_dict)
         self._copy_key_from_dict_to_target("etternavn", self._navn[0], navn_dict)
         self._copy_key_from_dict_to_target("forkortetNavn", self._navn[0], navn_dict)
-        self._copy_key_from_dict_to_target("originaltNavn", self._navn[0], navn_dict)
+        # self._copy_key_from_dict_to_target("originaltNavn", self._navn[0], navn_dict)
 
         return navn_dict
 
@@ -151,11 +151,11 @@ class Person:
         # Loop through all adresses and remove anyone with "graderingsnivaa: strengtFortrolig"
         for i in range (len(self._bostedsadresse)):
             if "graderingsnivaa" in self._bostedsadresse[i] and self._bostedsadresse[i]["graderingsnivaa"] == "strengtFortrolig":
-                print("Bostedsadresse gradert strengt fortrolig")
+                # print("Bostedsadresse gradert strengt fortrolig")
                 self._bostedsadresse[i] = None
             if "erGjeldende" in self._bostedsadresse[i] and self._bostedsadresse[i]["erGjeldende"]:
-                self._copy_key_from_dict_to_target("adresseIdentifikatorFraMatrikkelen", self._bostedsadresse[i], bosted)
-                self._copy_key_from_dict_to_target("skolekrets", self._bostedsadresse[i], bosted)
+                # self._copy_key_from_dict_to_target("adresseIdentifikatorFraMatrikkelen", self._bostedsadresse[i], bosted)
+                # self._copy_key_from_dict_to_target("skolekrets", self._bostedsadresse[i], bosted)
                 self._copy_key_from_dict_to_target("vegadresse", self._bostedsadresse[i], bosted)
                 self._copy_key_from_dict_to_target("ukjentBosted", self._bostedsadresse[i], bosted)            
 
@@ -191,7 +191,7 @@ class Person:
         # Loop through all adresses and remove anyone with "graderingsnivaa: strengtFortrolig"
         for i in range (len(self._postadresse)):
             if "graderingsnivaa" in self._postadresse[i] and self._postadresse[i]["graderingsnivaa"] == "strengtFortrolig":
-                print("Postadresse gradert strengt fortrolig")
+                # print("Postadresse gradert strengt fortrolig")
                 self._postadresse[i] = None
             if "erGjeldende" in self._postadresse[i] and self._postadresse[i]["erGjeldende"]:
                 self._copy_key_from_dict_to_target("postadresseIFrittFormat", self._postadresse[i], post)
