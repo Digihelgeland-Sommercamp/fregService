@@ -25,7 +25,7 @@ def person(personnummer):
         try:
             person = Person(file_name=personnummer)
             return jsonify(person.batch)
-        except BadRequest as e:
+        except Exception as e:
             response = e.description
             return Response(response, e.code)
 
