@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: fregservice
-        image: johannesdigdir/freg_service:5184f67c9fb9ae6f66fd46c81b2c5ec527e32592
+        image: johannesdigdir/freg_service:0bb84a11b33ea2f3528f951dabd7809450c77a6e
         ports:
         - containerPort: 5000

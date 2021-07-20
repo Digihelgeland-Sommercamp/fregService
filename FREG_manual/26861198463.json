@@ -2,14 +2,14 @@
   "falskIdentitet": null,
   "identifikasjonsnummer": [
     {
-      "ajourholdstidspunkt": "2020-12-22T16:09:27.064Z",
+      "ajourholdstidspunkt": "2020-12-22T16:09:43.769Z",
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": null,
       "gyldighetstidspunkt": null,
       "opphoerstidspunkt": null,
       "status": "iBruk",
-      "foedselsEllerDNummer": "22830298944",
+      "foedselsEllerDNummer": "26861198463",
       "identifikatortype": "foedselsnummer"
     }
   ],
@@ -18,11 +18,11 @@
   "legitimasjonsdokument": null,
   "status": [
     {
-      "ajourholdstidspunkt": "2020-12-22T16:09:27.064Z",
+      "ajourholdstidspunkt": "2020-12-22T16:09:43.769Z",
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": null,
-      "gyldighetstidspunkt": "2020-12-22T16:09:27.064Z",
+      "gyldighetstidspunkt": "2020-12-22T16:09:43.769Z",
       "opphoerstidspunkt": null,
       "status": "bosatt"
     }
@@ -38,7 +38,7 @@
       "aarsak": null,
       "gyldighetstidspunkt": null,
       "opphoerstidspunkt": null,
-      "kjoenn": "mann"
+      "kjoenn": "kvinne"
     }
   ],
   "foedsel": [
@@ -49,35 +49,35 @@
       "aarsak": null,
       "gyldighetstidspunkt": null,
       "opphoerstidspunkt": null,
-      "foedselsdato": "2002-03-22",
-      "foedselsaar": "2002",
+      "foedselsdato": "2011-06-26",
+      "foedselsaar": "2011",
       "foedested": null,
-      "foedekommuneINorge": "4601",
+      "foedekommuneINorge": "4203",
       "foedeland": "NOR"
     }
   ],
   "foedselINorge": null,
   "familierelasjon": [
     {
-      "ajourholdstidspunkt": "2020-12-23T11:06:22.549Z",
+      "ajourholdstidspunkt": "2020-12-23T11:25:54.779Z",
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": null,
-      "gyldighetstidspunkt": "2002-03-21T23:00:00Z",
+      "gyldighetstidspunkt": "2011-06-25T22:00:00Z",
       "opphoerstidspunkt": null,
-      "relatertPerson": "20827897842",
+      "relatertPerson": "10858197681",
       "relatertPersonUtenFolkeregisteridentifikator": null,
       "relatertPersonsRolle": "mor",
       "minRolleForPerson": "barn"
     },
     {
-      "ajourholdstidspunkt": "2020-12-23T11:06:22.549Z",
+      "ajourholdstidspunkt": "2020-12-23T11:25:54.779Z",
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": null,
-      "gyldighetstidspunkt": "2002-03-21T23:00:00Z",
+      "gyldighetstidspunkt": "2011-06-25T22:00:00Z",
       "opphoerstidspunkt": null,
-      "relatertPerson": "18817896738",
+      "relatertPerson": "09838197571",
       "relatertPersonUtenFolkeregisteridentifikator": null,
       "relatertPersonsRolle": "far",
       "minRolleForPerson": "barn"
@@ -89,10 +89,10 @@
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": "Vigsel",
-      "gyldighetstidspunkt": "2020-12-16T23:00:00Z",
+      "gyldighetstidspunkt": "2020-12-17T23:00:00Z",
       "opphoerstidspunkt": null,
       "sivilstand": "ugift",
-      "sivilstandsdato": "2020-12-17",
+      "sivilstandsdato": "2020-12-18",
       "myndighet": null,
       "kommune": null,
       "sted": null,
@@ -103,76 +103,55 @@
   "doedsfall": null,
   "navn": [
     {
-      "ajourholdstidspunkt": "2021-01-30T03:10:28.905Z",
+      "ajourholdstidspunkt": "2021-01-30T03:19:07.108Z",
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": "Første gangs navnevalg",
       "gyldighetstidspunkt": "2018-12-31T23:00:00Z",
       "opphoerstidspunkt": null,
-      "fornavn": "SAMARBEIDSVILLIG",
-      "mellomnavn": null,
-      "etternavn": "SVOGER",
-      "forkortetNavn": "SVOGER SAMARBEIDSVILLIG",
+      "fornavn": "SANNSYNLIG",
+      "mellomnavn": "KJENNING",
+      "etternavn": "STJERNE",
+      "forkortetNavn": "STJERNE SANNSYNLIG KJENNING",
       "originaltNavn": null
     }
   ],
   "adressebeskyttelse": null,
   "bostedsadresse": [
     {
-      "ajourholdstidspunkt": "2021-02-02T04:54:50.9Z",
+      "ajourholdstidspunkt": "2021-02-02T05:21:24.578Z",
       "erGjeldende": true,
       "kilde": "DP055_veinummer",
       "aarsak": "Årsakskode fra DSF: ",
-      "gyldighetstidspunkt": "2020-12-16T23:00:00Z",
+      "gyldighetstidspunkt": "2020-12-17T23:00:00Z",
       "opphoerstidspunkt": null,
       "vegadresse": {
-        "kommunenummer": "4601",
+        "kommunenummer": "4203",
         "bruksenhetsnummer": "H0101",
         "bruksenhetstype": "bolig",
-        "adressenavn": "Skjoldhøgda",
+        "adressenavn": "Skareveien",
         "adressenummer": {
-          "husnummer": "74",
+          "husnummer": "90",
           "husbokstav": null
         },
-        "adressekode": "32965",
+        "adressekode": "23227",
         "adressetilleggsnavn": null,
         "poststed": {
-          "poststedsnavn": "NESTTUN",
-          "postnummer": "5222"
+          "poststedsnavn": "KONGSHAVN",
+          "postnummer": "4812"
         },
         "coAdressenavn": null
       },
       "matrikkeladresse": null,
       "ukjentBosted": null,
-      "adresseIdentifikatorFraMatrikkelen": "256890112",
+      "adresseIdentifikatorFraMatrikkelen": "324651387",
       "naerAdresseIdentifikatorFraMatrikkelen": null,
       "adressegradering": "ugradert",
-      "flyttedato": "2020-12-16",
-      "grunnkrets": 1315,
-      "stemmekrets": 48,
-      "skolekrets": null,
+      "flyttedato": "2020-12-17",
+      "grunnkrets": 2205,
+      "stemmekrets": 5,
+      "skolekrets": 7,
       "kirkekrets": 1
-    },
-    {
-      "ajourholdstidspunkt": "2020-12-16T23:00:00Z",
-      "erGjeldende": false,
-      "kilde": "KILDE_DSF",
-      "aarsak": "Flytting innen kommunen",
-      "gyldighetstidspunkt": "2006-05-26T22:00:00Z",
-      "opphoerstidspunkt": null,
-      "vegadresse": null,
-      "matrikkeladresse": null,
-      "ukjentBosted": {
-        "bostedskommune": "3802"
-      },
-      "adresseIdentifikatorFraMatrikkelen": null,
-      "naerAdresseIdentifikatorFraMatrikkelen": null,
-      "adressegradering": "ugradert",
-      "flyttedato": "2006-05-27",
-      "grunnkrets": null,
-      "stemmekrets": null,
-      "skolekrets": null,
-      "kirkekrets": null
     }
   ],
   "oppholdsadresse": null,
@@ -192,8 +171,8 @@
       "adressegradering": "ugradert",
       "kontaktadresseIFrittFormat": {
         "adresselinje": [
-          "Skjoldhøgda",
-          "5222 NESTTUN",
+          "Skareveien",
+          "4812 KONGSHAVN",
           "Norge"
         ],
         "landkode": null
@@ -213,28 +192,8 @@
       "vegadresse": null,
       "postadresseIFrittFormat": {
         "adresselinje": [
-          "Skjoldhøgda",
-          "5222 NESTTUN",
-          "Norge"
-        ],
-        "poststed": null
-      },
-      "adresseIdentifikatorFraMatrikkelen": null
-    },
-    {
-      "ajourholdstidspunkt": "2020-12-16T23:00:00Z",
-      "erGjeldende": false,
-      "kilde": "KILDE_DSF",
-      "aarsak": null,
-      "gyldighetstidspunkt": null,
-      "opphoerstidspunkt": null,
-      "adressegradering": "ugradert",
-      "postboksadresse": null,
-      "vegadresse": null,
-      "postadresseIFrittFormat": {
-        "adresselinje": [
-          "Holmsryggen",
-          "3072 SANDE I VESTFOLD",
+          "Skareveien",
+          "4812 KONGSHAVN",
           "Norge"
         ],
         "poststed": null
@@ -243,17 +202,46 @@
     }
   ],
   "postadresseIUtlandet": null,
-  "foreldreansvar": null,
+  "foreldreansvar": [
+    {
+      "ajourholdstidspunkt": "2021-04-08T14:32:46.944Z",
+      "erGjeldende": true,
+      "kilde": "DP051_korr_famfrel",
+      "aarsak": "DP051_korr_famfrel",
+      "gyldighetstidspunkt": "2011-06-25T22:00:00Z",
+      "opphoerstidspunkt": null,
+      "ansvar": "felles",
+      "ansvarssubjekt": "26861198463",
+      "ansvarlig": "10858197681",
+      "ansvarligOrganisasjon": null,
+      "ansvarligUtenIdentifikator": null,
+      "ansvarssubjektUtenIdentifikator": null
+    },
+    {
+      "ajourholdstidspunkt": "2021-04-08T14:32:46.941Z",
+      "erGjeldende": true,
+      "kilde": "DP051_korr_famfrel",
+      "aarsak": "DP051_korr_famfrel",
+      "gyldighetstidspunkt": "2011-06-25T22:00:00Z",
+      "opphoerstidspunkt": null,
+      "ansvar": "felles",
+      "ansvarssubjekt": "26861198463",
+      "ansvarlig": "09838197571",
+      "ansvarligOrganisasjon": null,
+      "ansvarligUtenIdentifikator": null,
+      "ansvarssubjektUtenIdentifikator": null
+    }
+  ],
   "statsborgerskap": [
     {
       "ajourholdstidspunkt": null,
       "erGjeldende": true,
       "kilde": "KILDE_DSF",
       "aarsak": null,
-      "gyldighetstidspunkt": "2020-12-16T23:00:00Z",
+      "gyldighetstidspunkt": "2020-12-17T23:00:00Z",
       "opphoerstidspunkt": null,
       "statsborgerskap": "NOR",
-      "ervervsdato": "2020-12-17"
+      "ervervsdato": "2020-12-18"
     }
   ],
   "bibehold": null,
