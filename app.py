@@ -21,7 +21,7 @@ def root():
 def person(personnummer):
     if request.method == 'GET':
         if personnummer is not None:
-            personnummer = personnummer+".json"
+            personnummer = str(personnummer)+".json"
         try:
             person = Person(file_name=personnummer)
             return jsonify(person.batch)
