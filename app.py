@@ -1,7 +1,9 @@
 from flask import Flask, request
 from flask.json import jsonify
+from werkzeug.exceptions import BadRequest
 from werkzeug.utils import escape
 from fregservice import Person
+from flask import Response
 
 app = Flask(__name__)
 
@@ -20,8 +22,12 @@ def person(personnummer):
     if request.method == 'GET':
         if personnummer is not None:
             personnummer = personnummer+".json"
-        person = Person(file_name=personnummer)
-        return jsonify(person.batch)
+        try:
+            person = Person(file_name=personnummer)
+            return jsonify(person.batch)
+        except BadRequest as e:
+            response = e.description
+            return Response(response, e.code)
 
 
 @app.route("/batch", methods=['GET'])
