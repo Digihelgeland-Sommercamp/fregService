@@ -23,7 +23,7 @@ class Person:
             try:
                 file_name_index = files_in_directory.index(file_name)
             except ValueError:
-                raise BadRequest
+                raise BadRequest("ValueError when trying to get files in directory with file_name: " + str(file_name))
 
             file_to_open = freg_manual_path + files_in_directory[file_name_index]
             with open(file_to_open, "r") as file:
