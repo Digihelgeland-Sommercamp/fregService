@@ -63,8 +63,6 @@ class FregService:
         self._navn = json_object["navn"]
         self._adressebeskyttelse = json_object["adressebeskyttelse"]
         self._bostedsadresse = json_object["bostedsadresse"]
-        self._preferert_kontaktadresse = json_object["preferertKontaktadresse"]
-        self._postadresse = json_object["postadresse"]
         self._foreldreansvar = json_object["foreldreansvar"]
         self._foedsel = json_object["foedsel"]
         
@@ -160,45 +158,6 @@ class FregService:
                 self._copy_key_from_dict_to_target("ukjentBosted", self._bostedsadresse[i], bosted)            
 
         return bosted
-        
-    @property
-    def preferert_kontaktadresse(self):
-        # Removes any address for a person with "adressebeskyttelse: strengtFortrolig"
-        if self._is_address_guarded() or self._preferert_kontaktadresse is None:
-            return None
-
-        kontaktadresse = {}
-
-        # Loop through all adresses and remove anyone with "graderingsnivaa: strengtFortrolig"
-        for i in range (len(self._preferert_kontaktadresse)):
-            if "graderingsnivaa" in self._preferert_kontaktadresse[i] and self._preferert_kontaktadresse[i]["graderingsnivaa"] == "strengtFortrolig":
-                print("Bostedsadresse gradert strengt fortrolig")
-                self._preferert_kontaktadresse[i] = None
-            if "erGjeldende" in self._preferert_kontaktadresse[i] and self._preferert_kontaktadresse[i]["erGjeldende"]:
-                self._copy_key_from_dict_to_target("kontaktadresseIFrittFormat", self._preferert_kontaktadresse[i], kontaktadresse)
-                self._copy_key_from_dict_to_target("valg", self._preferert_kontaktadresse[i], kontaktadresse)
-
-        return kontaktadresse
-             
-    @property
-    def postadresse(self):
-        # Removes any address for a person with "adressebeskyttelse: strengtFortrolig"
-        if self._is_address_guarded() or self._postadresse is None:
-            return None
-
-        post = {}
-
-        # Loop through all adresses and remove anyone with "graderingsnivaa: strengtFortrolig"
-        for i in range (len(self._postadresse)):
-            if "graderingsnivaa" in self._postadresse[i] and self._postadresse[i]["graderingsnivaa"] == "strengtFortrolig":
-                # print("Postadresse gradert strengt fortrolig")
-                self._postadresse[i] = None
-            if "erGjeldende" in self._postadresse[i] and self._postadresse[i]["erGjeldende"]:
-                self._copy_key_from_dict_to_target("postadresseIFrittFormat", self._postadresse[i], post)
-                self._copy_key_from_dict_to_target("postboksadresse", self._postadresse[i], post)
-                self._copy_key_from_dict_to_target("vegadresse", self._postadresse[i], post)
-
-        return post
              
     @property
     def foreldreansvar(self):
@@ -234,8 +193,6 @@ class FregService:
             "familierelasjon": self.familierelasjon,
             "navn": self.navn,
             "bostedsadresse": self.bostedsadresse,
-            "preferertKontaktadresse": self.preferert_kontaktadresse,
-            "postadresse": self.postadresse,
             "foreldreansvar": self.foreldreansvar,
             "foedsel": self.foedsel
         }
