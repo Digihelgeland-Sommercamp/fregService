@@ -7,10 +7,6 @@ from flask import Response
 
 app = Flask(__name__)
 
-# powershell: 
-# $env:FLASK_APP = path
-# flask run
-
 @app.route("/", methods=["GET"])
 def root():
     if request.method == "GET":

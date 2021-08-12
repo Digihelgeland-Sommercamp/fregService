@@ -11,8 +11,6 @@ class FregService:
         person_from_file = self._read_person_from_file(local_file_path=local_file_path, file_name=file_name, file_position_in_directory=file_position_in_directory)
         self._parse_freg_person_json(json_object=person_from_file)
 
-        # self._list_all_keys(person_from_file)
-
     def _read_person_from_file(self, local_file_path, file_name: str, file_position_in_directory: int):
         parent_filepath = pathlib.Path(__file__).parent.resolve()
         freg_manual_path = str(parent_filepath) + local_file_path
@@ -129,8 +127,6 @@ class FregService:
         self._copy_key_from_dict_to_target("mellomnavn", self._navn[0], navn_dict)
         self._copy_key_from_dict_to_target("etternavn", self._navn[0], navn_dict)
         self._copy_key_from_dict_to_target("forkortetNavn", self._navn[0], navn_dict)
-        # self._copy_key_from_dict_to_target("originaltNavn", self._navn[0], navn_dict)
-
         return navn_dict
 
     @property
@@ -149,11 +145,8 @@ class FregService:
         # Loop through all adresses and remove anyone with "graderingsnivaa: strengtFortrolig"
         for i in range (len(self._bostedsadresse)):
             if "graderingsnivaa" in self._bostedsadresse[i] and self._bostedsadresse[i]["graderingsnivaa"] == "strengtFortrolig":
-                # print("Bostedsadresse gradert strengt fortrolig")
                 self._bostedsadresse[i] = None
             if "erGjeldende" in self._bostedsadresse[i] and self._bostedsadresse[i]["erGjeldende"]:
-                # self._copy_key_from_dict_to_target("adresseIdentifikatorFraMatrikkelen", self._bostedsadresse[i], bosted)
-                # self._copy_key_from_dict_to_target("skolekrets", self._bostedsadresse[i], bosted)
                 self._copy_key_from_dict_to_target("vegadresse", self._bostedsadresse[i], bosted)
                 self._copy_key_from_dict_to_target("ukjentBosted", self._bostedsadresse[i], bosted)            
 
@@ -196,18 +189,3 @@ class FregService:
             "foreldreansvar": self.foreldreansvar,
             "foedsel": self.foedsel
         }
-
-
-# from datetime import date, datetime
-# def list_personnummer_of_adults():
-#     for i in range(24):
-#         person = Person(file_position_in_directory=i)
-#         date_of_birth = datetime.strptime(person.foedsel["foedselsdato"], "%Y-%m-%d").date()
-#         if date_of_birth < date(2003, 1, 1):
-#             print (person.identifikasjonsnummer["foedselsEllerDNummer"])
-#             # print (date_of_birth)
-
-# list_personnummer_of_adults()
-
-# person = Person()
-# print (person.get_number_of_files_in_directory())
